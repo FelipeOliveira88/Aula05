@@ -29,7 +29,7 @@ public class TeacherHelper {
 				System.out.println("Para calcular seu salário base precisamos saber quantas aulas semanais o professor tem na instituição");
 				numeroAulas = leitor.nextInt();
 				System.out.println("Por favor, informe o valor da hora-aula praticada na sua escola ");
-				horaAula = leitor.nextDouble()
+				horaAula = leitor.nextDouble();
 				salarioBase = numeroAulas * 4.5 * horaAula;
 				horaAtividade = salarioBase * 0.05;
 				descansoSemanalRemunerado = (salarioBase + horaAtividade) / 6;
@@ -59,6 +59,9 @@ public class TeacherHelper {
 			case 3:
 				
 				switch(gerador.nextInt(7)) {
+				case 0:
+					System.out.println("Você é responsavel pelos alunos perderem os cabelos com fatorial");
+					break;
 				case 1:
 					System.out.println("Você é um professor incrível!");
 					break;
